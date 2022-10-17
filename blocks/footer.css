@@ -1,0 +1,22 @@
+.footer__copy {
+  color: #545454;
+  font-size: 18px;
+  padding-top: 67px;
+  padding-bottom: 60px;
+  line-height: 1.21;
+  font-weight: 400;
+  margin: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .footer {
+    padding-left: 5.9%;
+    padding-right: 5.9%;
+  }
+
+  .footer__copy {
+    font-size: 14px;
+    padding-top: 48px;
+    padding-bottom: 36px;
+  }
+}

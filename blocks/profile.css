@@ -1,0 +1,126 @@
+.profile {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.profile__box {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.profile__picture {
+  height: 120px;
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+.profile__text {
+  color: white;
+}
+
+.profile__name {
+  font-size: 42px;
+  padding-right: 18px;
+  font-weight: 500;
+  line-height: 1.14;
+  display: inline;
+}
+
+.profile__role {
+  font-size: 18px;
+  margin-top: 8px;
+  margin-bottom: 0;
+  font-weight: 400;
+  line-height: 1.21;
+}
+
+.profile__edit-button {
+  border: 1px solid white;
+  height: 24px;
+  width: 24px;
+  background: url("../images/Edit.svg") no-repeat center;
+  background-size: 10px auto;
+  background-color: transparent;
+}
+
+.profile__add {
+  max-width: 22px;
+  max-height: 22px;
+}
+
+.profile__add-button {
+  height: 50px;
+  min-width: 150px;
+  border: 2px solid white;
+  border-radius: 2px;
+  background: url("../images/Add.svg") no-repeat center;
+  background-color: transparent;
+}
+
+@media screen and (min-width: 901px) {
+  .profile__add-button:hover {
+    opacity: 60%;
+    cursor: pointer;
+  }
+
+  .profile__edit-button:hover {
+    opacity: 60%;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 900px) and (min-width: 601px) {
+  .profile {
+    justify-content: space-evenly;
+  }
+
+  .profile__text {
+    text-align: center;
+  }
+
+  .profile__add-button {
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .profile {
+    padding-top: 42px;
+    flex-direction: column;
+    gap: 36px;
+  }
+
+  .profile__box {
+    flex-direction: column;
+  }
+
+  .profile__edit {
+    width: 55.5%;
+  }
+
+  .profile__name {
+    font-size: 22px;
+    padding-right: 10px;
+  }
+
+  .profile__role {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .profile__edit-button {
+    height: 18px;
+    width: 18px;
+    background-size: 7.5px auto;
+  }
+
+  .profile__add-button {
+    width: 100%;
+    background-size: 16px auto;
+  }
+}

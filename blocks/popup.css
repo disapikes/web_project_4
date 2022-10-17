@@ -1,0 +1,129 @@
+.popup {
+  display: none;
+  background-color: rgb(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+}
+.popup__opened {
+  display: block;
+}
+
+/* The popup form - hidden by default */
+.popup__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 195px auto;
+
+  z-index: 1;
+  height: 330px;
+  width: 430px;
+  background-color: white;
+  border-radius: 10px;
+  position: relative;
+}
+
+.popup__title {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 1.2;
+  height: 23px;
+  width: 330px;
+  padding: 34px 36px 54px;
+
+  margin: 0;
+  align-self: flex-start;
+}
+
+.popup__form_input {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
+  width: 358px;
+  height: 27px;
+  border: none;
+  margin-bottom: 30px;
+  border-bottom: 1px solid gray;
+}
+input {
+  color: black;
+}
+::placeholder {
+  color: black;
+}
+
+.popup__save {
+  height: 50px;
+  width: 358px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.2;
+  background-color: black;
+  color: white;
+  border-radius: 2px;
+  margin-top: calc(48px - 30px);
+  padding: 0;
+}
+
+.popup__cancel {
+  position: absolute;
+  right: -40px;
+  top: -40px;
+  width: 40px;
+  height: 40px;
+  background: url(../images/Close-Icon.png) no-repeat;
+  border: none;
+  padding: 0;
+}
+
+@media screen and (min-width: 901px) {
+  .popup__cancel:hover {
+    opacity: 60%;
+    cursor: pointer;
+  }
+
+  .popup__save:hover {
+    opacity: 60%;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .popup__form {
+    width: 282px;
+    height: 322px;
+  }
+
+  .popup__title {
+    width: 238px;
+    height: 22px;
+    font-size: 18px;
+    line-height: 1.2;
+    padding: 25px 22px 76px;
+  }
+
+  .popup__form_input {
+    width: 238px;
+    height: 17px;
+    font-size: 14px;
+    line-height: 1.2;
+    border-bottom: none;
+    padding: 0;
+  }
+
+  .popup__save {
+    width: 238px;
+    height: 46px;
+    font-size: 14px;
+    line-height: 1.2;
+    margin-top: calc(46px - 30px);
+  }
+
+  .popup__cancel {
+    width: 26px;
+    height: 26px;
+    background: url(../images/Close-IconS.png) no-repeat;
+    right: 0;
+  }
+}

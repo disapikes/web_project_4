@@ -1,16 +1,27 @@
-# Project 4: Around The U.S.
+# "All Around The US"
+    This is the fourth project of the Web Development program at Practicum by Yandex. It was created using HTML, CSS and Javascript based on the design brief in Figma.
 
-### Overview
+## This is a responsive webpage, and consolidates all technologies we have learnt so far
 
-* Figma
-* Images
+## Project features
 
-**Figma**
+ # Semantic HTML5 and CSS
 
-* [Link to the project in Figma](https://www.figma.com/file/SurN1jaeEQIhuZEDMhmWWf/Sprint-4-Around-The-U.S.-desktop-mobile?node-id=0%3A1)
+ # Javascript
+    Responsive popup-form
+ 
+ # Flexbox
+ 
+ # Grid 
+    Rendered images through TinyPNG and vector files through SVGOMG 
 
-**Images**
+ # Flat BEM 
+    All images and CSS markup are stored locally, and are connected with (@import)
 
-The way you'll do this at work is by exporting images directly from Figma — we recommend doing that to practice more. Don't forget to optimize them [here](https://tinypng.com/), so your project loads faster. 
+ # Buttons with (:Hover) effect
+    :Hover active only on >900px
 
-Have fun with JavaScript!
+ # Responsive with breakpoints at 901px, 601px, 302px
+
+## Github link: 
+https://github.com/disapikes/web_project_4
