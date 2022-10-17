@@ -23,29 +23,39 @@
   color: white;
 }
 
-.profile__name {
+.profile__text_title {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 18px;
+}
+
+.profile__text_name {
   font-size: 42px;
-  padding-right: 18px;
   font-weight: 500;
   line-height: 1.14;
-  display: inline;
+  display: inline-block;
+  max-width: 373px;
+  margin: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
-.profile__role {
-  font-size: 18px;
-  margin-top: 8px;
-  margin-bottom: 0;
-  font-weight: 400;
-  line-height: 1.21;
-}
-
-.profile__edit-button {
+.profile__text_edit-button {
   border: 1px solid white;
   height: 24px;
   width: 24px;
   background: url("../images/Edit.svg") no-repeat center;
   background-size: 10px auto;
   background-color: transparent;
+}
+
+.profile__text_role {
+  font-size: 18px;
+  margin-top: 8px;
+  margin-bottom: 0;
+  font-weight: 400;
+  line-height: 1.21;
 }
 
 .profile__add {
@@ -68,7 +78,7 @@
     cursor: pointer;
   }
 
-  .profile__edit-button:hover {
+  .profile__text_edit-button:hover {
     opacity: 60%;
     cursor: pointer;
   }
@@ -103,17 +113,17 @@
     width: 55.5%;
   }
 
-  .profile__name {
+  .profile__text_name {
     font-size: 22px;
     padding-right: 10px;
   }
 
-  .profile__role {
+  .profile__text_role {
     font-size: 14px;
     text-align: center;
   }
 
-  .profile__edit-button {
+  .profile__text_edit-button {
     height: 18px;
     width: 18px;
     background-size: 7.5px auto;

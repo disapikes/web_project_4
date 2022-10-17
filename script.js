@@ -12,16 +12,16 @@ function closeForm() {
 }
 
 function getDisplayName() {
-  let displayName = document.querySelector(".profile__name").innerHTML;
+  let displayName = document.querySelector(".profile__text_name").innerHTML;
   return displayName;
 }
 function getDisplayRole() {
-  let displayRole = document.querySelector(".profile__role").innerHTML;
+  let displayRole = document.querySelector(".profile__text_role").innerHTML;
   return displayRole;
 }
 let formElement = document.querySelector("#profile_form");
 const closeBtn = document.querySelector("#closePopup");
-const openBtn = document.querySelector(".profile__edit-button");
+const openBtn = document.querySelector(".profile__text_edit-button");
 
 function handleProfileFormSubmit(evt) {
   evt.preventDefault();
@@ -29,8 +29,8 @@ function handleProfileFormSubmit(evt) {
   let nameInput = document.querySelector("#name").value;
   let roleInput = document.querySelector("#role").value;
 
-  document.querySelector(".profile__name").textContent = nameInput;
-  document.querySelector(".profile__role").textContent = roleInput;
+  document.querySelector(".profile__text_name").textContent = nameInput;
+  document.querySelector(".profile__text_role").textContent = roleInput;
 
   closeForm();
 }
