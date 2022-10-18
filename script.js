@@ -1,6 +1,6 @@
 function openForm() {
   let popup = document.getElementById("popup");
-  popup.classList.add("popup__opened");
+  popup.classList.add("popup_opened");
 
   document.querySelector("#name").value = getDisplayName();
   document.querySelector("#role").value = getDisplayRole();
@@ -8,7 +8,7 @@ function openForm() {
 
 function closeForm() {
   let popup = document.getElementById("popup");
-  popup.classList.remove("popup__opened");
+  popup.classList.remove("popup_opened");
 }
 
 function getDisplayName() {

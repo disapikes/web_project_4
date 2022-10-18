@@ -5,7 +5,8 @@
   height: 100%;
   position: fixed;
 }
-.popup__opened {
+
+.popup_opened {
   display: block;
 }
 
