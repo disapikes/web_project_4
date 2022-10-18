@@ -23,13 +23,13 @@
   color: white;
 }
 
-.profile__text_title {
+.profile__title {
   display: inline-flex;
   align-items: baseline;
   gap: 18px;
 }
 
-.profile__text_name {
+.profile__name {
   font-size: 42px;
   font-weight: 500;
   line-height: 1.14;
@@ -41,7 +41,7 @@
   overflow: hidden;
 }
 
-.profile__text_edit-button {
+.profile__edit-button {
   border: 1px solid white;
   height: 24px;
   width: 24px;
@@ -50,7 +50,7 @@
   background-color: transparent;
 }
 
-.profile__text_role {
+.profile__role {
   font-size: 18px;
   margin-top: 8px;
   margin-bottom: 0;
@@ -72,16 +72,14 @@
   background-color: transparent;
 }
 
-@media screen and (min-width: 901px) {
-  .profile__add-button:hover {
-    opacity: 60%;
-    cursor: pointer;
-  }
+.profile__add-button:hover {
+  opacity: 60%;
+  cursor: pointer;
+}
 
-  .profile__text_edit-button:hover {
-    opacity: 60%;
-    cursor: pointer;
-  }
+.profile__edit-button:hover {
+  opacity: 60%;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 900px) and (min-width: 601px) {
@@ -100,6 +98,7 @@
 
 @media screen and (max-width: 600px) {
   .profile {
+    width: 282px;
     padding-top: 42px;
     flex-direction: column;
     gap: 36px;
@@ -117,7 +116,7 @@
     max-width: 224px;
     gap: 10px;
   }
-  .profile__text_name {
+  .profile__name {
     font-size: 22px;
     max-width: 196px;
     text-overflow: ellipsis;
@@ -125,7 +124,7 @@
     overflow: hidden;
   }
 
-  .profile__text_role {
+  .profile__role {
     font-size: 14px;
     text-align: center;
     max-width: 224px;
@@ -134,7 +133,7 @@
     overflow: hidden;
   }
 
-  .profile__text_edit-button {
+  .profile__edit-button {
     height: 18px;
     width: 18px;
     background-size: 7.5px auto;

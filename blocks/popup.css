@@ -9,15 +9,14 @@
   display: block;
 }
 
-/* The popup form - hidden by default */
-.popup__form {
+.popup__page {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 195px auto;
-
+  margin: auto;
+  top: 195px;
   z-index: 1;
-  height: 330px;
+
   width: 430px;
   background-color: white;
   border-radius: 10px;
@@ -28,15 +27,17 @@
   font-weight: 900;
   font-size: 24px;
   line-height: 1.2;
-  height: 23px;
+
   width: 330px;
   padding: 34px 36px 54px;
 
-  margin: 0;
   align-self: flex-start;
 }
 
-.popup__form_input {
+.popup__form {
+  max-width: 358px;
+}
+.popup__form-input {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.2;
@@ -44,13 +45,7 @@
   height: 27px;
   border: none;
   margin-bottom: 30px;
-  border-bottom: 1px solid gray;
-}
-input {
-  color: black;
-}
-::placeholder {
-  color: black;
+  border-bottom: 1px solid rgba(0, 0, 0, 1);
 }
 
 .popup__save {
@@ -63,6 +58,7 @@ input {
   color: white;
   border-radius: 2px;
   margin-top: calc(48px - 30px);
+  margin-bottom: 40px;
   padding: 0;
 }
 
@@ -72,43 +68,42 @@ input {
   top: -40px;
   width: 40px;
   height: 40px;
-  background: url(../images/Close-Icon.png) no-repeat;
+  background: url(../images/Close-Icon.svg) no-repeat;
   border: none;
   padding: 0;
+  margin: 0;
 }
 
-@media screen and (min-width: 901px) {
-  .popup__cancel:hover {
-    opacity: 60%;
-    cursor: pointer;
-  }
+.popup__cancel:hover {
+  opacity: 60%;
+  cursor: pointer;
+}
 
-  .popup__save:hover {
-    opacity: 60%;
-    cursor: pointer;
-  }
+.popup__save:hover {
+  background-color: rgba(0, 0, 0, 0.25);
+  cursor: pointer;
 }
 
 @media screen and (max-width: 600px) {
-  .popup__form {
+  .popup__page {
     width: 282px;
-    height: 322px;
+    min-height: 322px;
+    top: 123px;
   }
 
   .popup__title {
     width: 238px;
-    height: 22px;
+
     font-size: 18px;
     line-height: 1.2;
     padding: 25px 22px 76px;
   }
 
-  .popup__form_input {
+  .popup__form {
+    max-width: 238px;
+  }
+  .popup__form-input {
     width: 238px;
-    height: 17px;
-    font-size: 14px;
-    line-height: 1.2;
-    border-bottom: none;
     padding: 0;
   }
 
@@ -118,12 +113,13 @@ input {
     font-size: 14px;
     line-height: 1.2;
     margin-top: calc(46px - 30px);
+    margin-bottom: 25px;
   }
 
   .popup__cancel {
     width: 26px;
     height: 26px;
-    background: url(../images/Close-IconS.png) no-repeat;
+    background: url(../images/Close-IconS.svg) no-repeat;
     right: 0;
   }
 }

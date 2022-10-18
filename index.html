@@ -8,14 +8,16 @@
   </head>
   <body class="background">
     <div class="popup" id="popup">
-      <form class="popup__form" id="profile_form">
-        <p class="popup__title">Edit profile</p>
-        <button class="popup__cancel" id="closePopup"></button>
-        <input type="text" class="popup__form_input" id="name" name="name" placeholder="Name" />
-        <input type="text" class="popup__form_input" id="role" name="aboutme" placeholder="Aboutme" />
+      <div class="popup__page" id="page">
+        <div class="popup__title">Edit profile</div>
+        <button type="button" class="popup__cancel" id="closePopup"></button>
+        <form class="popup__form" name="form">
+          <input type="text" class="popup__form-input" id="name" name="name" placeholder="Name" />
+          <input type="text" class="popup__form-input" id="role" name="aboutme" placeholder="Aboutme" />
 
-        <button type="submit" class="popup__save">Save</button>
-      </form>
+          <button type="submit" class="popup__save">Save</button>
+        </form>
+      </div>
     </div>
     <div class="container">
       <header class="header">
@@ -28,11 +30,11 @@
             <img src="./images/jacques-cousteau.png" alt="cousteau" class="profile__picture" />
 
             <div class="profile__text">
-              <div class="profile__text_title">
-                <h1 class="profile__text_name">Jacques Cousteau</h1>
-                <button class="profile__text_edit-button" id="openPopup"></button>
+              <div class="profile__title">
+                <h1 class="profile__name">Jacques Cousteau</h1>
+                <button type="button" class="profile__edit-button" id="openPopup"></button>
               </div>
-              <p class="profile__text_role">Explorer</p>
+              <p class="profile__role">Explorer</p>
             </div>
           </div>
           <button type="button" class="profile__add-button"></button>

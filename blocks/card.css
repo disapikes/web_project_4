@@ -43,16 +43,11 @@
 }
 
 .card__like-button:active {
-    background: url(../images/like.png) no-repeat center;
-    color: black;
-  }
+  background: url(../images/like.png) no-repeat center;
+  color: black;
+}
 
-@media screen and (min-width: 901px) {
-  .card__like-button:hover {
-    opacity: 60%;
-    cursor: pointer;
-  }
-
-  
-  }
-
+.card__like-button:hover {
+  opacity: 60%;
+  cursor: pointer;
+}
