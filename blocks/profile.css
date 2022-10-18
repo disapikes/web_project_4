@@ -56,6 +56,10 @@
   margin-bottom: 0;
   font-weight: 400;
   line-height: 1.21;
+  max-width: 373px;
+  text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .profile__add {
@@ -85,10 +89,6 @@
 @media screen and (max-width: 900px) and (min-width: 601px) {
   .profile {
     justify-content: space-evenly;
-  }
-
-  .profile__text {
-    text-align: center;
   }
 
   .profile__add-button {
